@@ -10,7 +10,7 @@ import org.springframework.jdbc.datasource.DataSourceTransactionManager;
 import javax.sql.DataSource;
 
 @Configuration
-public class flowableConfig {
+public class FlowableConfig {
     @Autowired
     private DataSource dataSource;
 
@@ -36,8 +36,8 @@ public class flowableConfig {
 //        return new StrongUuidGenerator();
 //    }
     @Bean
-    public thisUuidGenerator thisUuidGenerator() {
-        return new thisUuidGenerator();
+    public ThisUuidGenerator thisUuidGenerator() {
+        return new ThisUuidGenerator();
     }
 
     /**

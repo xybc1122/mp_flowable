@@ -1,20 +1,16 @@
 spring:
   datasource:
     type: com.alibaba.druid.pool.DruidDataSource
-    driverClassName: com.mysql.jdbc.Driver
-    url: jdbc:mysql://127.0.0.1:3306/flowable2?useUnicode=true&characterEncoding=UTF-8&serverTimezone=UTC
+    driverClassName: com.mysql.cj.jdbc.Driver
+    #url: jdbc:mysql://127.0.0.1:3306/flowable2?useUnicode=true&characterEncoding=UTF-8&serverTimezone=UTC
+    url: jdbc:mysql://192.168.1.230:3306/mydb?useUnicode=true&nullCatalogMeansCurrent=true&characterEncoding=utf-8&useSSL=false
     username: root
-    password: 123456
-logging:
-  level:
-    root: warn
-    com.mq.demo.dao: trace
-  pattern:
-    console: '%p%m%n'
+    password: wawzj7788
 mybatis-plus:
+  configuration:
+    log-impl: org.apache.ibatis.logging.stdout.StdOutImpl
   global-config:
     db-config:
       logic-delete-value: 1 # 逻辑已删除值(默认为 1)
       logic-not-delete-value: 0 # 逻辑未删除值(默认为 0)
-  mapper-locations:
-    -com/mq/demo/dao/*
+  mapper-locations: classpath*:mapper/sys/*.xml  #配置映射xml地址

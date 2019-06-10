@@ -62,9 +62,37 @@
             <version>3.1.0</version>
         </dependency>
         <dependency>
-        <groupId>org.flowable</groupId>
-        <artifactId>flowable-spring-boot-starter-process</artifactId>
-        <version>6.4.1</version>
+            <groupId>org.flowable</groupId>
+            <artifactId>flowable-spring-boot-starter-process</artifactId>
+            <version>6.4.1</version>
+        </dependency>
+
+        <dependency>
+            <groupId>com.baomidou</groupId>
+            <artifactId>mybatis-plus-generator</artifactId>
+            <version>3.1.0</version>
+        </dependency>
+        <dependency>
+            <groupId>org.apache.velocity</groupId>
+            <artifactId>velocity-engine-core</artifactId>
+            <version>2.1</version>
+        </dependency>
+        <dependency>
+            <groupId>org.freemarker</groupId>
+            <artifactId>freemarker</artifactId>
+            <version>2.3.28</version>
+        </dependency>
+        <dependency>
+            <groupId>com.ibeetl</groupId>
+            <artifactId>beetl</artifactId>
+            <version>3.0.0.RELEASE</version>
+        </dependency>
+
+        <!-- 用于转换dto 跟 model层 深度拷贝 -->
+        <dependency>
+            <groupId>ma.glasnost.orika</groupId>
+            <artifactId>orika-core</artifactId>
+            <version>1.4.5</version>
         </dependency>
 
     </dependencies>

@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.mq.demo.dao.TenantUserMapper">
+    <select id="sleAllTu" resultType="com.mq.demo.sys.entity.TenantUser">
+   select id AS tuId,t_id,name from tenant_user ${ew.customSqlSegment}
+  </select>
+</mapper>
